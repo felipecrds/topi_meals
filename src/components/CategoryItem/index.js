@@ -4,7 +4,7 @@ import { Container, CategoryImage } from './styled'
 export default ({ data, activeCategory, setActiveCategory, setActiveCategoryName }) => {
   const handleCategoryClick = () => {
     setActiveCategory(data.idCategory)
-    if (data.idCategory == 0) {
+    if (data.idCategory === 0) {
       setActiveCategoryName('Todas as categorias')
     } else {
       setActiveCategoryName(data.strCategory)
