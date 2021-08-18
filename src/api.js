@@ -12,13 +12,13 @@ export default {
     let nameRecipe = 's=' + search;
     let nameCategorie = 'c=' + category;
 
-    if (nameRecipe != 's=') {
+    if (nameRecipe !== 's=') {
 
       const res = await fetch(BASE + '/search.php?' + nameRecipe);
       const json = await res.json();
       return json;
 
-    } else if (nameCategorie != 'c=' && category != 'Todas as categorias') {
+    } else if (nameCategorie !== 'c=' && category !== 'Todas as categorias') {
 
       const res = await fetch(BASE + '/filter.php?' + nameCategorie);
       const json = await res.json();
