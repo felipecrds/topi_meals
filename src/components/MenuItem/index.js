@@ -6,7 +6,7 @@ export default ({ icon, link }) => {
   const history = useHistory();
   const location = useLocation();
 
-  let isActive = location.pathname == link;
+  let isActive = location.pathname === link;
 
   const handleLinkClick = (e) => {
     e.preventDefault();
