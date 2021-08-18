@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
 width:80px;
 height: 80px;
-background-color: ${props => props.active == props.id ? '#dbdbdb' : '#B0BAC3'};
+background-color: ${props => props.active === props.id ? '#dbdbdb' : '#B0BAC3'};
 display: flex;
 justify-content: center;
 align-items: center;
